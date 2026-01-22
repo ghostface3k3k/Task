@@ -1,0 +1,92 @@
+{
+  "id": "1",
+  "code": "IT-001",
+  "nameEn": "Information Technology",
+  "nameAr": "تكنولوجيا المعلومات",
+  "manager": "John Smith",
+  "location": "Building A, Floor 3",
+  "status": "Active",
+  "createdAt": "2024-01-15T10:00:00.000Z",
+  "profile": {
+    "nationalId": "1234567890",
+    "title": "Department Head",
+    "firstName": "John",
+    "lastName": "Smith",
+    "dateOfBirth": "1985-05-15",
+    "gender": "Male",
+    "nationality": "United States",
+    "passportNumber": "AB1234567",
+    "passportIssueDate": "2020-01-01",
+    "passportExpiryDate": "2030-01-01",
+    "maritalStatus": "Married",
+    "personalEmail": "john.smith@email.com",
+    "mobile": "+1-555-0123",
+    "emergencyContacts": [
+      {
+        "name": "Jane Smith",
+        "relationship": "Spouse",
+        "phone": "+1-555-0124"
+      },
+      {
+        "name": "Robert Smith",
+        "relationship": "Father",
+        "phone": "+1-555-0125"
+      }
+    ],
+    "address": {
+      "street": "123 Main Street",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "country": "United States"
+    },
+    "drivingLicense": {
+      "number": "DL123456789",
+      "issueDate": "2015-06-01",
+      "expiryDate": "2025-06-01",
+      "type": "Class C"
+    },
+    "militaryStatus": {
+      "status": "Completed",
+      "serviceYears": "2005-2007",
+      "rank": "Corporal"
+    }
+  },
+  "employees": [
+    {
+      "id": "E001",
+      "name": "Alice Johnson",
+      "role": "Senior Developer",
+      "contactInfo": "alice.j@company.com",
+      "kpi": "95%"
+    },
+    {
+      "id": "E002",
+      "name": "Bob Williams",
+      "role": "DevOps Engineer",
+      "contactInfo": "bob.w@company.com",
+      "kpi": "92%"
+    },
+    {
+      "id": "E003",
+      "name": "Carol Davis",
+      "role": "UI/UX Designer",
+      "contactInfo": "carol.d@company.com",
+      "kpi": "88%"
+    },
+    {
+      "id": "E004",
+      "name": "David Martinez",
+      "role": "QA Engineer",
+      "contactInfo": "david.m@company.com",
+      "kpi": "90%"
+    },
+    {
+      "id": "E005",
+      "name": "Emma Brown",
+      "role": "Project Manager",
+      "contactInfo": "emma.b@company.com",
+      "kpi": "94%"
+    }
+  ]
+}
