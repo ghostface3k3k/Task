@@ -1,0 +1,7 @@
+# Frontend specific
+dist/
+dist-ssr/
+*.local
+
+# Vite
+.vite/
