@@ -1,0 +1,32 @@
+{
+  "department": {
+    "id": "1",
+    "name": "Finance Department",
+    "description": "description",
+    "localization": {
+      "name": "الحسابات",
+      "description": "وصف"
+    },
+    "code": 11557,
+    "manager": "john smith",
+    "location": "HQ, london office",
+    "employeesNumber": 2,
+    "status": true,
+    "parentDepartment": null,
+    "createdAt": "2019-01-01T12:30:00.000Z",
+    "employees": [
+      {
+        "id": 11555,
+        "name": "K. AbdElkader",
+        "role": "CTO",
+        "contact": "01712345678"
+      },
+      {
+        "id": 12365,
+        "name": "F. Rezk",
+        "role": "CEO",
+        "contact": "01712345678"
+      }
+    ]
+  }
+}

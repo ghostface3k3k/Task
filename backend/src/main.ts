@@ -1,0 +1,18 @@
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from './app.module';
+
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  
+  // Enable CORS for frontend
+  app.enableCors({
+    origin: 'http://localhost:5173',
+    credentials: true,
+  });
+
+  await app.listen(3000);
+  console.log('🚀 Backend server is running on http://localhost:3000');
+  console.log('📊 GraphQL playground: http://localhost:3000/graphql');
+}
+
+bootstrap();
