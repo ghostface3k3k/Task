@@ -1,4 +1,4 @@
-"# Task - Department Management System
+# Task - Department Management System
 
 A full-stack department management application built with React, TypeScript, Material-UI, Tailwind CSS on the frontend and NestJS with GraphQL on the backend.
 
@@ -259,5 +259,4 @@ npm run build
 
 ## License
 
-ISC
-" 
+ISC 
