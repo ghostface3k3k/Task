@@ -1,58 +1,17 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
-
-interface Localization {
-  name: string;
-  description: string;
-}
-
-interface ParentDepartment {
-  id: string;
-  name: string;
-}
-
-interface Employee {
-  id: string;
-  name: string;
-  role: string;
-  contact: string;
-}
-
-interface Department {
-  id: string;
-  name: string;
-  description: string;
-  localization: Localization;
-  code: number;
-  manager: string;
-  location: string;
-  employeesNumber: number;
-  status: boolean;
-  parentDepartment: ParentDepartment | null;
-  createdAt: string;
-  employees: Employee[];
-}
-
-interface UpdateDepartmentInput {
-  name?: string;
-  description?: string;
-  localization?: Localization;
-  manager?: string;
-  location?: string;
-  status?: boolean;
-}
-
-interface AddEmployeeInput {
-  name: string;
-  role: string;
-  contact: string;
-}
+import {
+  Department,
+  Employee,
+  UpdateDepartmentInput,
+  AddEmployeeInput,
+} from '../types';
 
 @Injectable()
 export class DepartmentService {
   private departments: Map<string, Department> = new Map();
-  private employeeIdCounter = 20000;
+  private employeeIdCounter = 12366;
 
   constructor() {
     this.loadData();

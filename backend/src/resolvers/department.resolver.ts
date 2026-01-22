@@ -1,23 +1,6 @@
 import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
 import { DepartmentService } from '../services/department.service';
-
-interface UpdateDepartmentInput {
-  name?: string;
-  description?: string;
-  localization?: {
-    name: string;
-    description: string;
-  };
-  manager?: string;
-  location?: string;
-  status?: boolean;
-}
-
-interface AddEmployeeInput {
-  name: string;
-  role: string;
-  contact: string;
-}
+import { UpdateDepartmentInput, AddEmployeeInput } from '../types';
 
 @Resolver('Department')
 export class DepartmentResolver {
