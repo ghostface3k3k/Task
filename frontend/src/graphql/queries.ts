@@ -20,6 +20,13 @@ export const GET_DEPARTMENT = gql`
         name
       }
       createdAt
+      employees {
+        id
+        name
+        role
+        contact
+        kpi
+      }
     }
   }
 `;
