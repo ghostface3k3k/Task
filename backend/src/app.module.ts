@@ -11,14 +11,7 @@ import { join } from 'path';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       typePaths: ['./**/*.graphql'],
-      definitions: {
-        path: join(process.cwd(), 'src/graphql.ts'),
-      },
       playground: true,
-      cors: {
-        origin: 'http://localhost:5173',
-        credentials: true,
-      },
     }),
   ],
   providers: [DepartmentResolver, EmployeeResolver, DepartmentService],

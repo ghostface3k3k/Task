@@ -2,19 +2,19 @@ import { Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
 
-interface Localization {
+export interface Localization {
   name: string;
   description: string;
 }
 
-interface Employee {
+export interface Employee {
   id: number;
   name: string;
   role: string;
   contact: string;
 }
 
-interface Department {
+export interface Department {
   id: string;
   name: string;
   description: string;
@@ -29,7 +29,7 @@ interface Department {
   employees: Employee[];
 }
 
-interface UpdateDepartmentInput {
+export interface UpdateDepartmentInput {
   name?: string;
   description?: string;
   localization?: Localization;
@@ -38,7 +38,7 @@ interface UpdateDepartmentInput {
   status?: boolean;
 }
 
-interface AddEmployeeInput {
+export interface AddEmployeeInput {
   name: string;
   role: string;
   contact: string;
