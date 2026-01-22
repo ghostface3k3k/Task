@@ -1,0 +1,8 @@
+# Backend specific
+dist/
+*.tsbuildinfo
+schema.gql
+
+# Database
+*.db
+*.sqlite
