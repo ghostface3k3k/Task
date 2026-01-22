@@ -19,7 +19,14 @@ export class DepartmentService {
 
   private loadData(): void {
     try {
-      const dataPath = path.join(__dirname, '../data/department.json');
+      // Try production path first, then fall back to development path
+      let dataPath = path.join(__dirname, '../data/department.json');
+      
+      if (!fs.existsSync(dataPath)) {
+        // Development path
+        dataPath = path.join(process.cwd(), 'src/data/department.json');
+      }
+      
       const rawData = fs.readFileSync(dataPath, 'utf-8');
       const data = JSON.parse(rawData);
       
@@ -33,7 +40,7 @@ export class DepartmentService {
         this.employeeIdCounter = maxId + 1;
       }
     } catch (error) {
-      console.error('Error loading department data from', path.join(__dirname, '../data/department.json'));
+      console.error('Error loading department data');
       console.error('Error details:', error);
       throw new Error('Failed to load department data. Please check if department.json exists and is valid.');
     }
