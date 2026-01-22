@@ -1,0 +1,32 @@
+.employee-edit-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.edit-paper {
+  padding: 2rem;
+}
+
+.edit-title {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.error-alert {
+  margin-bottom: 1rem;
+}
