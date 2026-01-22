@@ -1,0 +1,120 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "name": "Finance Department",
+      "description": "Handles financial operations and accounting",
+      "localization": {
+        "name": "الحسابات",
+        "description": "يتعامل مع العمليات المالية والمحاسبة"
+      },
+      "code": 11557,
+      "manager": "John Smith",
+      "location": "HQ, London Office",
+      "employeesNumber": 10,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-01-01T12:30:00.000Z",
+      "employees": [
+        {
+          "id": "11557",
+          "name": "M. ElGandour",
+          "role": "Manager",
+          "contact": "+201712345678",
+          "kpi": 95
+        },
+        {
+          "id": "11558",
+          "name": "Sarah Johnson",
+          "role": "Senior Accountant",
+          "contact": "+201712345679",
+          "kpi": 88
+        },
+        {
+          "id": "11559",
+          "name": "Ahmed Hassan",
+          "role": "Financial Analyst",
+          "contact": "+201712345680",
+          "kpi": 92
+        },
+        {
+          "id": "11560",
+          "name": "Emily Davis",
+          "role": "Payroll Specialist",
+          "contact": "+201712345681",
+          "kpi": 85
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Human Resources",
+      "description": "Manages employee relations and recruitment",
+      "localization": {
+        "name": "الموارد البشرية",
+        "description": "يدير علاقات الموظفين والتوظيف"
+      },
+      "code": 11558,
+      "manager": "Jane Doe",
+      "location": "HQ, London Office",
+      "employeesNumber": 8,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-02-15T09:00:00.000Z",
+      "employees": [
+        {
+          "id": "11561",
+          "name": "Michael Brown",
+          "role": "HR Manager",
+          "contact": "+201712345682",
+          "kpi": 90
+        },
+        {
+          "id": "11562",
+          "name": "Lisa Anderson",
+          "role": "Recruiter",
+          "contact": "+201712345683",
+          "kpi": 87
+        }
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "id": "11557",
+      "nationalId": "29506011234567",
+      "title": "Mr.",
+      "firstName": "Mohamed",
+      "middleName": "Ali",
+      "lastName": "ElGandour",
+      "dateOfBirth": "1990-06-01",
+      "gender": "Male",
+      "nationality": "Egyptian",
+      "passportNumber": "A12345678",
+      "maritalStatus": "Married",
+      "email": "m.elgandour@company.com",
+      "mobile": "+201712345678",
+      "emergencyContacts": [
+        {
+          "name": "Fatma ElGandour",
+          "relationship": "Wife",
+          "phone": "+201712345700"
+        }
+      ],
+      "address": {
+        "street": "123 Main St",
+        "city": "Cairo",
+        "country": "Egypt",
+        "postalCode": "11511"
+      },
+      "drivingLicense": {
+        "number": "DL123456",
+        "expiryDate": "2025-12-31"
+      },
+      "militaryStatus": "Completed",
+      "departmentId": "1",
+      "role": "Manager",
+      "avatar": "https://i.pravatar.cc/150?img=12"
+    }
+  ]
+}
