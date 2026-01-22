@@ -27,41 +27,6 @@ interface EmployeesTableProps {
   onEmployeeDeleted: () => void;
 }
 
-const EmployeeRow = memo(
-  ({
-    employee,
-    onDelete,
-  }: {
-    employee: Employee;
-    onDelete: (id: number) => void;
-  }) => {
-    const handleDelete = useCallback(() => {
-      onDelete(employee.id);
-    }, [employee.id, onDelete]);
-
-    return (
-      <TableRow hover className="hover:bg-blue-50">
-        <TableCell className="font-medium">{employee.id}</TableCell>
-        <TableCell>{employee.name}</TableCell>
-        <TableCell>{employee.role}</TableCell>
-        <TableCell>{employee.contact}</TableCell>
-        <TableCell align="right">
-          <IconButton
-            color="error"
-            onClick={handleDelete}
-            size="small"
-            aria-label="delete employee"
-          >
-            <DeleteIcon />
-          </IconButton>
-        </TableCell>
-      </TableRow>
-    );
-  }
-);
-
-EmployeeRow.displayName = 'EmployeeRow';
-
 export const EmployeesTable: React.FC<EmployeesTableProps> = memo(
   ({ employees, departmentId, onEmployeeDeleted }) => {
     const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);

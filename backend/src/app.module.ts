@@ -11,7 +11,8 @@ import { join } from 'path';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       typePaths: ['./**/*.graphql'],
-      playground: true,
+      // Playground enabled for development - disable in production
+      playground: process.env.NODE_ENV !== 'production',
     }),
   ],
   providers: [DepartmentResolver, EmployeeResolver, DepartmentService],
