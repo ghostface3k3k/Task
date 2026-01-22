@@ -1,0 +1,1 @@
+{\n  "name": "backend",\n  "version": "0.0.1",\n  "private": true,\n  "dependencies": {\n    "@nestjs/common": "^9.0.0",\n    "@nestjs/core": "^9.0.0",\n    "@nestjs/graphql": "^9.0.0",\n    "@nestjs/platform-express": "^9.0.0",\n    "graphql": "^16.0.0",\n    "reflect-metadata": "^0.1.13",\n    "rxjs": "^7.0.0"\n  }\n}
