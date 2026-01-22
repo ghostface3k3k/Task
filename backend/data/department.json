@@ -54,13 +54,6 @@
   },
   "employees": [
     {
-      "id": "E001",
-      "name": "Alice Johnson",
-      "role": "Senior Developer",
-      "contactInfo": "alice.j@company.com",
-      "kpi": "95%"
-    },
-    {
       "id": "E002",
       "name": "Bob Williams",
       "role": "DevOps Engineer",
