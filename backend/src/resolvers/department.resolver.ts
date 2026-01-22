@@ -1,6 +1,24 @@
 import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
 import { DepartmentService } from '../services/department.service';
 
+interface UpdateDepartmentInput {
+  name?: string;
+  description?: string;
+  localization?: {
+    name: string;
+    description: string;
+  };
+  manager?: string;
+  location?: string;
+  status?: boolean;
+}
+
+interface AddEmployeeInput {
+  name: string;
+  role: string;
+  contact: string;
+}
+
 @Resolver('Department')
 export class DepartmentResolver {
   constructor(private readonly departmentService: DepartmentService) {}
@@ -18,7 +36,7 @@ export class DepartmentResolver {
   @Mutation('updateDepartment')
   updateDepartment(
     @Args('id') id: string,
-    @Args('input') input: any,
+    @Args('input') input: UpdateDepartmentInput,
   ) {
     return this.departmentService.updateDepartment(id, input);
   }
@@ -34,7 +52,7 @@ export class DepartmentResolver {
   @Mutation('addEmployee')
   addEmployee(
     @Args('departmentId') departmentId: string,
-    @Args('input') input: any,
+    @Args('input') input: AddEmployeeInput,
   ) {
     return this.departmentService.addEmployee(departmentId, input);
   }

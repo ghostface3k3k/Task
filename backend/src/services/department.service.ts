@@ -52,6 +52,7 @@ interface AddEmployeeInput {
 @Injectable()
 export class DepartmentService {
   private departments: Map<string, Department> = new Map();
+  private employeeIdCounter = 20000;
 
   constructor() {
     this.loadData();
@@ -126,7 +127,7 @@ export class DepartmentService {
     }
 
     const newEmployee: Employee = {
-      id: Date.now().toString(),
+      id: (++this.employeeIdCounter).toString(),
       ...input,
     };
 

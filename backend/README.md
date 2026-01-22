@@ -222,7 +222,14 @@ The API includes proper error handling:
 
 ## CORS Configuration
 
-CORS is enabled for all origins in development. Configure appropriately for production.
+CORS is configured via environment variables for security. By default, it allows:
+- `http://localhost:3000`
+- `http://localhost:4200`
+
+To configure for production, set `CORS_ORIGINS` in your `.env` file:
+```
+CORS_ORIGINS=https://yourdomain.com,https://api.yourdomain.com
+```
 
 ## Development
 

@@ -18,7 +18,9 @@ import { DepartmentService } from './services/department.service';
       playground: true,
       introspection: true,
       cors: {
-        origin: true,
+        origin: process.env.CORS_ORIGINS 
+          ? process.env.CORS_ORIGINS.split(',')
+          : ['http://localhost:3000', 'http://localhost:4200'],
         credentials: true,
       },
     }),
