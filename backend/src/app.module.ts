@@ -5,6 +5,7 @@ import { join } from 'path';
 import { DepartmentResolver } from './resolvers/department.resolver';
 import { EmployeeResolver } from './resolvers/employee.resolver';
 import { DepartmentService } from './services/department.service';
+import { getCorsOrigins } from './config/cors.config';
 
 @Module({
   imports: [
@@ -18,9 +19,7 @@ import { DepartmentService } from './services/department.service';
       playground: true,
       introspection: true,
       cors: {
-        origin: process.env.CORS_ORIGINS 
-          ? process.env.CORS_ORIGINS.split(',')
-          : ['http://localhost:3000', 'http://localhost:4200'],
+        origin: getCorsOrigins(),
         credentials: true,
       },
     }),

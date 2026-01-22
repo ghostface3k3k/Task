@@ -11,7 +11,7 @@ import {
 @Injectable()
 export class DepartmentService {
   private departments: Map<string, Department> = new Map();
-  private employeeIdCounter = 12366;
+  private employeeIdCounter = 1;
 
   constructor() {
     this.loadData();
@@ -25,9 +25,17 @@ export class DepartmentService {
       
       if (data.department) {
         this.departments.set(data.department.id, data.department);
+        
+        // Set employee ID counter to max existing ID + 1
+        const maxId = Math.max(
+          ...data.department.employees.map((emp: Employee) => parseInt(emp.id, 10)),
+        );
+        this.employeeIdCounter = maxId + 1;
       }
     } catch (error) {
-      console.error('Error loading department data:', error);
+      console.error('Error loading department data from', path.join(__dirname, '../data/department.json'));
+      console.error('Error details:', error);
+      throw new Error('Failed to load department data. Please check if department.json exists and is valid.');
     }
   }
 
