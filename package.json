@@ -1,1 +1,15 @@
-{\n  "name": "nestjs-backend-project",\n  "version": "1.0.0",\n  "description": "Backend for department and employee management",\n  "main": "main.ts",\n  "scripts": {\n    "start": "node dist/main.js",\n    "build": "tsc",\n    "watch": "tsc -w",\n    "format": "prettier --write ."\n  },\n  "dependencies": {\n    "@nestjs/common": "^9.0.0",\n    "@nestjs/core": "^9.0.0",\n    "@nestjs/graphql": "^9.0.0",\n    "@nestjs/typeorm": "^9.0.0",\n    "graphql": "^15.0.0",\n    "typeorm": "^0.2.42",\n    "reflect-metadata": "^0.1.13",\n    "zone.js": "^0.11.4"\n  },\n  "devDependencies": {\n    "@types/node": "^14.14.37",\n    "typescript": "^4.1.2",\n    "prettier": "^2.3.2"\n  }\n}
+{
+  "name": "hr-management-system",
+  "version": "1.0.0",
+  "description": "Complete HR Management System with React + NestJS + GraphQL",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["hr", "management", "react", "nestjs", "graphql", "typescript"],
+  "author": "",
+  "license": "MIT"
+}

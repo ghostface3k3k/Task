@@ -1,0 +1,73 @@
+type Query {
+  departments: [Department!]!
+  department(id: ID!): Department
+  employees: [Employee!]!
+  employee(id: ID!): Employee
+}
+
+type Mutation {
+  login(email: String!, password: String!): AuthPayload!
+  updateDepartment(id: ID!, input: UpdateDepartmentInput!): Department!
+  deleteEmployee(departmentId: ID!, employeeId: ID!): DeleteResponse!
+  updateEmployee(id: ID!, input: UpdateEmployeeInput!): Employee!
+  deleteEmployeeRecord(id: ID!): DeleteResponse!
+}
+
+type Department {
+  id: ID!
+  name: String!
+  description: String!
+  localization: Localization
+  code: Int!
+  manager: String!
+  location: String!
+  employeesNumber: Int!
+  status: Boolean!
+  parentDepartment: Department
+  createdAt: String!
+  employees: [Employee!]!
+}
+
+type Employee {
+  id: ID!
+  name: String!
+  role: String!
+  contact: String!
+  departmentId: ID!
+  department: Department
+}
+
+type Localization {
+  name: String!
+  description: String!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+type User {
+  id: ID!
+  email: String!
+  name: String!
+}
+
+type DeleteResponse {
+  success: Boolean!
+  message: String!
+}
+
+input UpdateDepartmentInput {
+  name: String
+  description: String
+  manager: String
+  location: String
+  status: Boolean
+}
+
+input UpdateEmployeeInput {
+  name: String
+  role: String
+  contact: String
+}

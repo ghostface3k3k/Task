@@ -1,0 +1,107 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "name": "Finance Department",
+      "description": "Handles all financial operations and accounting",
+      "localization": {
+        "name": "الحسابات",
+        "description": "وصف قسم الحسابات"
+      },
+      "code": 11557,
+      "manager": "John Smith",
+      "location": "HQ, London Office",
+      "employeesNumber": 3,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-01-01T12:30:00.000Z",
+      "employees": [
+        {
+          "id": "1",
+          "name": "M. ElGandour",
+          "role": "Manager",
+          "contact": "+201712345678",
+          "departmentId": "1"
+        },
+        {
+          "id": "2",
+          "name": "Sarah Johnson",
+          "role": "Accountant",
+          "contact": "+441234567890",
+          "departmentId": "1"
+        },
+        {
+          "id": "3",
+          "name": "Mike Davis",
+          "role": "Financial Analyst",
+          "contact": "+441234567891",
+          "departmentId": "1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "IT Department",
+      "description": "Technology and infrastructure management",
+      "localization": {
+        "name": "تكنولوجيا المعلومات",
+        "description": "إدارة التكنولوجيا والبنية التحتية"
+      },
+      "code": 11558,
+      "manager": "Emily Brown",
+      "location": "HQ, London Office",
+      "employeesNumber": 2,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2020-03-15T10:00:00.000Z",
+      "employees": [
+        {
+          "id": "4",
+          "name": "Tom Wilson",
+          "role": "Developer",
+          "contact": "+441234567892",
+          "departmentId": "2"
+        },
+        {
+          "id": "5",
+          "name": "Lisa Anderson",
+          "role": "System Admin",
+          "contact": "+441234567893",
+          "departmentId": "2"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "HR Department",
+      "description": "Human resources and employee management",
+      "localization": {
+        "name": "الموارد البشرية",
+        "description": "إدارة الموارد البشرية والموظفين"
+      },
+      "code": 11559,
+      "manager": "Jennifer Taylor",
+      "location": "HQ, London Office",
+      "employeesNumber": 2,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-06-20T14:30:00.000Z",
+      "employees": [
+        {
+          "id": "6",
+          "name": "Robert Martinez",
+          "role": "HR Specialist",
+          "contact": "+441234567894",
+          "departmentId": "3"
+        },
+        {
+          "id": "7",
+          "name": "Amanda Garcia",
+          "role": "Recruiter",
+          "contact": "+441234567895",
+          "departmentId": "3"
+        }
+      ]
+    }
+  ]
+}
