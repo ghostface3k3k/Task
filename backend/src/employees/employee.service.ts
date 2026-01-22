@@ -12,7 +12,15 @@ export class EmployeeService {
   }
 
   private loadData() {
-    const dataPath = path.join(__dirname, '../data/department.json');
+    // In development, __dirname points to src/employees
+    // In production (dist), __dirname points to dist/employees
+    let dataPath = path.join(__dirname, '../data/department.json');
+    
+    // If the file doesn't exist at the expected location, try the source location
+    if (!fs.existsSync(dataPath)) {
+      dataPath = path.join(process.cwd(), 'src/data/department.json');
+    }
+    
     const rawData = fs.readFileSync(dataPath, 'utf-8');
     const data = JSON.parse(rawData);
     this.departments = data.departments || [];
