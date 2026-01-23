@@ -1,0 +1,67 @@
+type Localization {
+  name: String!
+  description: String!
+}
+
+type Department {
+  id: ID!
+  name: String!
+  description: String!
+  localization: Localization!
+  code: Int!
+  manager: String!
+  location: String!
+  employeesNumber: Int!
+  status: Boolean!
+  parentDepartment: Department
+  createdAt: DateTime!
+  employees: [Employee!]!
+}
+
+type Employee {
+  id: Int!
+  name: String!
+  role: String!
+  contact: String!
+}
+
+type User {
+  id: ID!
+  email: String!
+  name: String!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+input UpdateDepartmentInput {
+  name: String
+  description: String
+  manager: String
+  location: String
+  status: Boolean
+}
+
+input UpdateEmployeeInput {
+  name: String
+  role: String
+  contact: String
+}
+
+type Query {
+  getDepartment(id: ID!): Department
+  getDepartments: [Department!]!
+  getEmployees: [Employee!]!
+  getEmployee(id: Int!): Employee
+}
+
+type Mutation {
+  login(email: String!, password: String!): AuthPayload!
+  updateDepartment(id: ID!, input: UpdateDepartmentInput!): Department!
+  deleteEmployee(departmentId: ID!, employeeId: Int!): Boolean!
+  updateEmployee(departmentId: ID!, employeeId: Int!, input: UpdateEmployeeInput!): Employee!
+}
+
+scalar DateTime
