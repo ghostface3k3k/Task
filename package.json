@@ -1,1 +1,10 @@
-{\n  "workspaces": {\n    "frontend": "./frontend/*",\n    "backend": "./backend/*"\n  }\n}
+{
+  "name": "hr-management-system",
+  "version": "1.0.0",
+  "description": "HR Management System - Monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}

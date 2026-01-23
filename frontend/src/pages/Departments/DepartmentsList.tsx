@@ -6,11 +6,11 @@ import {
   Card,
   CardContent,
   Typography,
+  Grid,
   Chip,
   CircularProgress,
   Alert,
 } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2';
 import { Business as BusinessIcon, People as PeopleIcon } from '@mui/icons-material';
 import { GET_DEPARTMENTS } from '../../lib/graphql/queries';
 import { Department } from '../../types';
@@ -38,9 +38,9 @@ const DepartmentsList: React.FC = () => {
       <Typography variant="h4" className="font-poppins font-semibold mb-6" sx={{ color: '#151d48' }}>
         Departments
       </Typography>
-      <Grid2 container spacing={3}>
+      <Grid container spacing={3}>
         {departments.map((dept) => (
-          <Grid2 xs={12} sm={6} md={4} key={dept.id}>
+          <Grid xs={12} sm={6} md={4} key={dept.id}>
             <Card
               className="cursor-pointer hover:shadow-lg transition-shadow"
               sx={{
@@ -93,9 +93,9 @@ const DepartmentsList: React.FC = () => {
                 </Box>
               </CardContent>
             </Card>
-          </Grid2>
+          </Grid>
         ))}
-      </Grid2>
+      </Grid>
     </Box>
   );
 };

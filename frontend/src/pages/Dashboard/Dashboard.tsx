@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Box, Card, CardContent, Typography } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2';
+import { Box, Card, CardContent, Typography, Grid } from '@mui/material';
 import { People as PeopleIcon, Business as BusinessIcon } from '@mui/icons-material';
 
 const Dashboard: React.FC = () => {
@@ -27,9 +26,9 @@ const Dashboard: React.FC = () => {
       <Typography variant="h4" className="font-poppins font-semibold mb-6" sx={{ color: '#151d48' }}>
         Dashboard
       </Typography>
-      <Grid2 container spacing={3}>
+      <Grid container spacing={3}>
         {cards.map((card) => (
-          <Grid2 xs={12} sm={6} md={4} key={card.title}>
+          <Grid xs={12} sm={6} md={4} key={card.title}>
             <Card
               className="cursor-pointer hover:shadow-lg transition-shadow"
               sx={{
@@ -51,9 +50,9 @@ const Dashboard: React.FC = () => {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid2>
+          </Grid>
         ))}
-      </Grid2>
+      </Grid>
     </Box>
   );
 };

@@ -100,7 +100,6 @@ const EditDepartment: React.FC = () => {
 
   return (
     <Box>
-      {/* Breadcrumbs */}
       <Breadcrumbs className="mb-4" sx={{ color: '#737791' }}>
         <Link
           underline="hover"
@@ -126,8 +125,8 @@ const EditDepartment: React.FC = () => {
           </Typography>
 
           <form onSubmit={handleSubmit(onSubmit)}>
-            <Grid22 container spacing={3}>
-              <Grid22 xs={12} md={6}>
+            <Grid container spacing={3}>
+              <Grid xs={12} md={6}>
                 <Controller
                   name="name"
                   control={control}
@@ -142,9 +141,9 @@ const EditDepartment: React.FC = () => {
                     />
                   )}
                 />
-              </Grid2>
+              </Grid>
 
-              <Grid22 xs={12} md={6}>
+              <Grid xs={12} md={6}>
                 <Controller
                   name="code"
                   control={control}
@@ -160,9 +159,9 @@ const EditDepartment: React.FC = () => {
                     />
                   )}
                 />
-              </Grid2>
+              </Grid>
 
-              <Grid22 xs={12}>
+              <Grid xs={12}>
                 <Controller
                   name="description"
                   control={control}
@@ -179,9 +178,9 @@ const EditDepartment: React.FC = () => {
                     />
                   )}
                 />
-              </Grid2>
+              </Grid>
 
-              <Grid22 xs={12} md={6}>
+              <Grid xs={12} md={6}>
                 <Controller
                   name="localizationName"
                   control={control}
@@ -196,9 +195,9 @@ const EditDepartment: React.FC = () => {
                     />
                   )}
                 />
-              </Grid2>
+              </Grid>
 
-              <Grid22 xs={12} md={6}>
+              <Grid xs={12} md={6}>
                 <Controller
                   name="localizationDescription"
                   control={control}
@@ -213,9 +212,9 @@ const EditDepartment: React.FC = () => {
                     />
                   )}
                 />
-              </Grid2>
+              </Grid>
 
-              <Grid22 xs={12} md={6}>
+              <Grid xs={12} md={6}>
                 <Controller
                   name="manager"
                   control={control}
@@ -230,9 +229,9 @@ const EditDepartment: React.FC = () => {
                     />
                   )}
                 />
-              </Grid2>
+              </Grid>
 
-              <Grid22 xs={12} md={6}>
+              <Grid xs={12} md={6}>
                 <Controller
                   name="location"
                   control={control}
@@ -247,9 +246,9 @@ const EditDepartment: React.FC = () => {
                     />
                   )}
                 />
-              </Grid2>
+              </Grid>
 
-              <Grid22 xs={12} className="flex gap-3 justify-end">
+              <Grid xs={12} className="flex gap-3 justify-end">
                 <Button
                   variant="outlined"
                   startIcon={<CancelIcon />}
@@ -277,8 +276,8 @@ const EditDepartment: React.FC = () => {
                 >
                   {updateLoading ? <CircularProgress size={24} /> : 'Save Changes'}
                 </Button>
-              </Grid2>
-            </Grid2>
+              </Grid>
+            </Grid>
           </form>
         </CardContent>
       </Card>

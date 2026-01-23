@@ -13,15 +13,12 @@ import {
 } from '@mui/material';
 import { Home as HomeIcon, ArrowBack as ArrowBackIcon } from '@mui/icons-material';
 
-// This is a placeholder component for employee profile
-// In a real application, you would fetch employee details from the backend
 const EmployeeProfile: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
   return (
     <Box>
-      {/* Breadcrumbs */}
       <Breadcrumbs className="mb-4" sx={{ color: '#737791' }}>
         <Link
           underline="hover"
@@ -49,7 +46,6 @@ const EmployeeProfile: React.FC = () => {
         Back
       </Button>
 
-      {/* Profile Card */}
       <Card sx={{ borderRadius: '16px', boxShadow: '0 4px 20px rgba(237, 237, 237, 0.5)', mb: 3 }}>
         <CardContent className="p-6">
           <Box className="flex items-center gap-4 mb-6">
@@ -78,8 +74,8 @@ const EmployeeProfile: React.FC = () => {
             Personal Information
           </Typography>
 
-          <Grid22 container spacing={3}>
-            <Grid22 xs={12} md={6}>
+          <Grid container spacing={3}>
+            <Grid xs={12} md={6}>
               <Box>
                 <Typography variant="caption" sx={{ color: '#737791' }}>
                   Full Name
@@ -88,8 +84,8 @@ const EmployeeProfile: React.FC = () => {
                   Employee Name (ID: {id})
                 </Typography>
               </Box>
-            </Grid2>
-            <Grid22 xs={12} md={6}>
+            </Grid>
+            <Grid xs={12} md={6}>
               <Box>
                 <Typography variant="caption" sx={{ color: '#737791' }}>
                   Role
@@ -98,8 +94,8 @@ const EmployeeProfile: React.FC = () => {
                   Employee Role
                 </Typography>
               </Box>
-            </Grid2>
-            <Grid22 xs={12} md={6}>
+            </Grid>
+            <Grid xs={12} md={6}>
               <Box>
                 <Typography variant="caption" sx={{ color: '#737791' }}>
                   Contact
@@ -108,8 +104,8 @@ const EmployeeProfile: React.FC = () => {
                   Contact Information
                 </Typography>
               </Box>
-            </Grid2>
-            <Grid22 xs={12} md={6}>
+            </Grid>
+            <Grid xs={12} md={6}>
               <Box>
                 <Typography variant="caption" sx={{ color: '#737791' }}>
                   KPI
@@ -118,8 +114,8 @@ const EmployeeProfile: React.FC = () => {
                   Performance Score
                 </Typography>
               </Box>
-            </Grid2>
-          </Grid2>
+            </Grid>
+          </Grid>
 
           <Typography variant="body2" className="mt-6 text-center" sx={{ color: '#737791', fontStyle: 'italic' }}>
             This is a placeholder employee profile page. In a full implementation, this would show detailed employee
