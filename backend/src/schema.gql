@@ -1,0 +1,78 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+type Department {
+  code: Int!
+  createdAt: String!
+  description: String!
+  employees: [Employee!]!
+  employeesNumber: Int!
+  id: ID!
+  localization: Localization!
+  location: String!
+  manager: String!
+  name: String!
+  parentDepartment: Department
+  status: Boolean!
+}
+
+type Employee {
+  contact: String!
+  id: Int!
+  kpi: String
+  name: String!
+  role: String!
+}
+
+type Localization {
+  description: String!
+  name: String!
+}
+
+input LocalizationInput {
+  description: String!
+  name: String!
+}
+
+type Mutation {
+  deleteEmployee(departmentId: ID!, employeeId: Int!): Boolean!
+  login(email: String!, password: String!): AuthPayload!
+  updateDepartment(id: ID!, input: UpdateDepartmentInput!): Department
+  updateEmployee(departmentId: ID!, employeeId: Int!, input: UpdateEmployeeInput!): Employee
+}
+
+type Query {
+  getDepartment(id: ID!): Department
+  getDepartments: [Department!]!
+  getEmployees: [Employee!]!
+}
+
+input UpdateDepartmentInput {
+  code: Int
+  description: String
+  employeesNumber: Int
+  localization: LocalizationInput
+  location: String
+  manager: String
+  name: String
+  status: Boolean
+}
+
+input UpdateEmployeeInput {
+  contact: String
+  kpi: String
+  name: String
+  role: String
+}
+
+type User {
+  email: String!
+  id: ID!
+  name: String!
+}
