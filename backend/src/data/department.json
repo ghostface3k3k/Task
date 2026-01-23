@@ -1,0 +1,325 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "name": "finance department",
+      "description": "Manages company finances, budgets, and financial planning",
+      "localization": {
+        "name": "الحسابات",
+        "description": "وصف"
+      },
+      "code": 11557,
+      "manager": "john smith",
+      "location": "HQ, london office",
+      "employeesNumber": 10,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-01-01T12:30:00.000Z",
+      "employees": [
+        {
+          "id": 11557,
+          "name": "M. ElGandour",
+          "role": "Manager",
+          "contact": "+201712345678",
+          "kpi": "95%"
+        },
+        {
+          "id": 11555,
+          "name": "K. AbdElkader",
+          "role": "CTO",
+          "contact": "01712345678",
+          "kpi": "92%"
+        },
+        {
+          "id": 12365,
+          "name": "F. Rezk",
+          "role": "CEO",
+          "contact": "01712345678",
+          "kpi": "98%"
+        },
+        {
+          "id": 12366,
+          "name": "S. Ahmed",
+          "role": "Senior Accountant",
+          "contact": "+201612345678",
+          "kpi": "88%"
+        },
+        {
+          "id": 12367,
+          "name": "L. Mohamed",
+          "role": "Financial Analyst",
+          "contact": "+201512345678",
+          "kpi": "90%"
+        },
+        {
+          "id": 12368,
+          "name": "N. Hassan",
+          "role": "Accountant",
+          "contact": "+201412345678",
+          "kpi": "85%"
+        },
+        {
+          "id": 12369,
+          "name": "A. Ali",
+          "role": "Junior Accountant",
+          "contact": "+201312345678",
+          "kpi": "82%"
+        },
+        {
+          "id": 12370,
+          "name": "M. Ibrahim",
+          "role": "Budget Analyst",
+          "contact": "+201212345678",
+          "kpi": "87%"
+        },
+        {
+          "id": 12371,
+          "name": "H. Mahmoud",
+          "role": "Payroll Specialist",
+          "contact": "+201112345678",
+          "kpi": "91%"
+        },
+        {
+          "id": 12372,
+          "name": "D. Youssef",
+          "role": "Tax Specialist",
+          "contact": "+201012345678",
+          "kpi": "89%"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "human resources",
+      "description": "Handles recruitment, employee relations, and HR policies",
+      "localization": {
+        "name": "الموارد البشرية",
+        "description": "إدارة التوظيف وشؤون الموظفين"
+      },
+      "code": 11558,
+      "manager": "sarah johnson",
+      "location": "HQ, london office",
+      "employeesNumber": 8,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-02-15T09:00:00.000Z",
+      "employees": [
+        {
+          "id": 21001,
+          "name": "Sarah Johnson",
+          "role": "HR Manager",
+          "contact": "+441234567890",
+          "kpi": "94%"
+        },
+        {
+          "id": 21002,
+          "name": "James Wilson",
+          "role": "Recruiter",
+          "contact": "+441234567891",
+          "kpi": "89%"
+        },
+        {
+          "id": 21003,
+          "name": "Emily Davis",
+          "role": "HR Specialist",
+          "contact": "+441234567892",
+          "kpi": "91%"
+        },
+        {
+          "id": 21004,
+          "name": "Michael Brown",
+          "role": "Training Coordinator",
+          "contact": "+441234567893",
+          "kpi": "88%"
+        },
+        {
+          "id": 21005,
+          "name": "Lisa Martinez",
+          "role": "HR Assistant",
+          "contact": "+441234567894",
+          "kpi": "86%"
+        },
+        {
+          "id": 21006,
+          "name": "David Garcia",
+          "role": "Compensation Analyst",
+          "contact": "+441234567895",
+          "kpi": "90%"
+        },
+        {
+          "id": 21007,
+          "name": "Jennifer Lee",
+          "role": "Benefits Administrator",
+          "contact": "+441234567896",
+          "kpi": "92%"
+        },
+        {
+          "id": 21008,
+          "name": "Robert Taylor",
+          "role": "Employee Relations Specialist",
+          "contact": "+441234567897",
+          "kpi": "87%"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "information technology",
+      "description": "Manages IT infrastructure, software development, and technical support",
+      "localization": {
+        "name": "تكنولوجيا المعلومات",
+        "description": "إدارة البنية التحتية لتكنولوجيا المعلومات"
+      },
+      "code": 11559,
+      "manager": "alex chen",
+      "location": "Tech Hub, san francisco",
+      "employeesNumber": 15,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-03-20T10:00:00.000Z",
+      "employees": [
+        {
+          "id": 31001,
+          "name": "Alex Chen",
+          "role": "IT Director",
+          "contact": "+14155551234",
+          "kpi": "96%"
+        },
+        {
+          "id": 31002,
+          "name": "Maria Rodriguez",
+          "role": "Senior Developer",
+          "contact": "+14155551235",
+          "kpi": "93%"
+        },
+        {
+          "id": 31003,
+          "name": "John Smith",
+          "role": "DevOps Engineer",
+          "contact": "+14155551236",
+          "kpi": "91%"
+        },
+        {
+          "id": 31004,
+          "name": "Anna Kim",
+          "role": "QA Lead",
+          "contact": "+14155551237",
+          "kpi": "89%"
+        },
+        {
+          "id": 31005,
+          "name": "Tom Anderson",
+          "role": "Full Stack Developer",
+          "contact": "+14155551238",
+          "kpi": "90%"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "marketing",
+      "description": "Handles marketing strategies, campaigns, and brand management",
+      "localization": {
+        "name": "التسويق",
+        "description": "إدارة استراتيجيات التسويق والحملات"
+      },
+      "code": 11560,
+      "manager": "olivia moore",
+      "location": "HQ, london office",
+      "employeesNumber": 6,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-04-10T11:00:00.000Z",
+      "employees": [
+        {
+          "id": 41001,
+          "name": "Olivia Moore",
+          "role": "Marketing Director",
+          "contact": "+441234567900",
+          "kpi": "95%"
+        },
+        {
+          "id": 41002,
+          "name": "Daniel White",
+          "role": "Digital Marketing Manager",
+          "contact": "+441234567901",
+          "kpi": "92%"
+        },
+        {
+          "id": 41003,
+          "name": "Sophie Turner",
+          "role": "Content Strategist",
+          "contact": "+441234567902",
+          "kpi": "90%"
+        },
+        {
+          "id": 41004,
+          "name": "Chris Evans",
+          "role": "SEO Specialist",
+          "contact": "+441234567903",
+          "kpi": "88%"
+        },
+        {
+          "id": 41005,
+          "name": "Emma Watson",
+          "role": "Social Media Manager",
+          "contact": "+441234567904",
+          "kpi": "91%"
+        },
+        {
+          "id": 41006,
+          "name": "Ryan Reynolds",
+          "role": "Brand Manager",
+          "contact": "+441234567905",
+          "kpi": "89%"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "operations",
+      "description": "Oversees daily operations and process optimization",
+      "localization": {
+        "name": "العمليات",
+        "description": "إدارة العمليات اليومية"
+      },
+      "code": 11561,
+      "manager": "william harris",
+      "location": "Operations Center, manchester",
+      "employeesNumber": 12,
+      "status": true,
+      "parentDepartment": null,
+      "createdAt": "2019-05-05T08:30:00.000Z",
+      "employees": [
+        {
+          "id": 51001,
+          "name": "William Harris",
+          "role": "Operations Manager",
+          "contact": "+441617891234",
+          "kpi": "94%"
+        },
+        {
+          "id": 51002,
+          "name": "Isabella Clark",
+          "role": "Operations Coordinator",
+          "contact": "+441617891235",
+          "kpi": "90%"
+        },
+        {
+          "id": 51003,
+          "name": "Ethan Lewis",
+          "role": "Process Analyst",
+          "contact": "+441617891236",
+          "kpi": "87%"
+        },
+        {
+          "id": 51004,
+          "name": "Ava Walker",
+          "role": "Quality Assurance Manager",
+          "contact": "+441617891237",
+          "kpi": "92%"
+        }
+      ]
+    }
+  ]
+}
