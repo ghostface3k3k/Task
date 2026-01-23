@@ -1,0 +1,78 @@
+{
+  "id": "1",
+  "name": "Finance Department",
+  "description": "Description Description Description",
+  "localization": {
+    "name": "الحسابات",
+    "description": "وصف"
+  },
+  "code": 11557,
+  "manager": "Jane Smith",
+  "location": "HQ, London Office",
+  "employeesNumber": 10,
+  "status": true,
+  "parentDepartment": null,
+  "createdAt": "2024-01-10T11:06:00.000Z",
+  "employees": [
+    {
+      "id": 11557,
+      "name": "Jane Smith",
+      "role": "Software Engineer",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 11555,
+      "name": "John Doe",
+      "role": "Product Designer",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 12361,
+      "name": "Jane Smith",
+      "role": "Sales",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 14789,
+      "name": "John Doe",
+      "role": "Front-end Developer",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 114478,
+      "name": "Justin Lipshutz",
+      "role": "HR Specialist",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 102236,
+      "name": "Jane Smith",
+      "role": "Software Engineer",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 101778,
+      "name": "Marcus Culhane",
+      "role": "Product Manager",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 10002,
+      "name": "John Doe",
+      "role": "Laywer",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 10087,
+      "name": "Jane Smith",
+      "role": "Sales Agent",
+      "contact": "+1 555 123 4567"
+    },
+    {
+      "id": 11599,
+      "name": "Jane Smith",
+      "role": "Software Engineer",
+      "contact": "+1 555 123 4567"
+    }
+  ]
+}
